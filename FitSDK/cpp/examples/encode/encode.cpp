@@ -341,7 +341,7 @@ int EncodeActivityFile(std::string filename)
       recordMesg.SetDistance( (datapoint.distance - startDistance) * 100 ); //Meters
       recordMesg.SetGpsAccuracy( datapoint.satellites ); //Satellites
       recordMesg.SetAltitude( datapoint.altitude );
-      recordMesg.SetEnhancedSpeed( fabs( datapoint.speedGPS * 0.44704 ) ); // GPS Speed
+      recordMesg.SetEnhancedSpeed( fabs( datapoint.speedGPS * 0.277778 ) ); // Meters/sec
       recordMesg.SetPositionLat( gpsscalar * datapoint.lat );
       recordMesg.SetPositionLong( gpsscalar * datapoint.lon );
 
